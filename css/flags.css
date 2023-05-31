@@ -1,0 +1,47 @@
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.answer {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+.answer>button {
+  font-size: 1.5rem;
+}
+
+button.wrong {
+  background-color: #D62828;
+}
+
+.fi {
+  width: 600px;
+  max-width: 90%;
+  aspect-ratio: 3/2;
+}
+
+.streak {
+  position: relative;
+  color: #D62828;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .answer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .answer>button {
+    min-width: 280px;
+  }
+}
