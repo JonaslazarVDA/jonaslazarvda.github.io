@@ -4,20 +4,48 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="navbar">
+      <div class="controls">
+        <img src="logo.png" alt="logo" class="logo">
+        <button onclick="toggleNavLinks();">asds</button>
+      </div>
+      <div class="navlinks hidden">
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="projects.html">PROJECTS</a>
+      </div>
+    </div>
     <div class="intro-front">
       <span>Jonáš Lazar</span>
-      <img class="arrdown" src="svg/keyboard_double_arrow_down_FILL0_wght500_GRAD200_opsz48.svg" alt="down">
+      <button class="arrdown" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})">
+        <img src="svg/keyboard_double_arrow_down_FILL0_wght500_GRAD200_opsz48.svg" alt="down">
+      </button>
     </div>
     <div class="intro-back">
       <img src="svg/intro.svg" />
     </div>
+    <div class="links">
+      <div class="centlinks">
+        <a href="about.html">
+          ABOUT
+        </a>
+        <a href="projects.html">
+          PROJECTS
+        </a>
+      </div>
+    </div>
+    <div class="footer">
+      idk
+    </div>
 
   </body>
+  <script src="js/navbar.js"></script>
+  <script src="js/index.js"></script>
 </html>

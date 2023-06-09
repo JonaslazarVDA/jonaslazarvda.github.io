@@ -1,8 +1,25 @@
+body {
+  height: 200vh;
+  height: 200dvh;
+
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  background: transparent;
+  width: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .intro-front {
   height: 100vh;
   height: 100dvh;
-  width: 100vw;
-  width: 100dvw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,8 +27,14 @@
 }
 
 .intro-front>span {
+  color: white;
   font-size: min(10vh, 15vw);
   font-family: 'Kanit', sans-serif;
+  text-shadow: 3px 3px #003049,
+               6px 6px #d62828,
+               9px 9px #f77f00,
+               12px 12px #fcbf49,
+               15px 15px #eae2b7;
 }
 
 .intro-back {
@@ -29,4 +52,39 @@
 .arrdown {
   position: absolute;
   bottom: 1vh;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.links {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centlinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+}
+
+.links a {
+  border: solid 1px black;
+  border-radius: 15px;
+  padding: 20px;
+  background: linear-gradient(90deg, black 0%, transparent 0%);
+  transition: all .5s ease-in-out;
+}
+
+.links a:hover {
+  background: linear-gradient(90deg, black 100%, transparent 100%);
+}
+
+.footer {
+  height: 40vh;
+  background-color: black;
 }
