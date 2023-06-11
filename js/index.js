@@ -8,9 +8,9 @@ var customScroll = (e) => {
         return
     }
     let page = Math.floor(st/document.documentElement.clientHeight)+(st > lastScroll? 1 : 0);
-    window.scrollTo({top: page*document.documentElement.clientHeight, behavior: "smooth",})
+    window.scrollTo({top: page*document.documentElement.clientHeight, behavior: "smooth",});
     lastScroll = st <= 0? 0 : st;
-    let navbar = document.querySelector(".navbar")
+    let navbar = document.querySelector(".navbar");
     if (page == 0)
         navbar.classList.add("navtop");
     else

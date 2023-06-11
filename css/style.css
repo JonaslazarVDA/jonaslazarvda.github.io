@@ -72,6 +72,10 @@ body {
   transform: scaleX(1);
 }
 
+.navhere::after {
+  transform: scaleX(1) !important;
+}
+
 .navhidden>.navlinks {
   max-height: 0;
 }
