@@ -1,0 +1,307 @@
+* {
+  font-family: 'Kanit', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #001724;
+}
+
+.navbar {
+  z-index: 1;
+  position: fixed;
+  background-color: #003049;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+}
+
+.menutoggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  padding: 0;
+  margin-right: auto;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.navlinks {
+  max-height: calc(100dvh - 30px);
+  transition: max-height .3s ease-in-out;
+  overflow: hidden;
+
+  display: grid;
+  text-align: center;
+  gap: 15px;
+  font-size: 1.5rem;
+  width: fit-content;
+  align-self: center;
+}
+
+.navlinks a {
+  position: relative;
+}
+
+.navlinks a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: white;
+  transform-origin: bottom left;
+  transition: all .2s ease;
+  transform: scaleX(0);
+}
+
+.navlinks a:hover::after {
+  transform: scaleX(1);
+}
+
+.navhidden>.navlinks {
+  max-height: 0;
+}
+
+.menutoggle {
+  aspect-ratio: 1 / 1;
+  height: auto;
+  position: relative;
+}
+
+.menutoggle * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transition: opacity .1s ease;
+}
+
+.navhidden .menutoggle :nth-child(2) {
+  opacity: 0;
+}
+
+.menutoggle :nth-child(1) {
+  opacity: 0;
+}
+
+.navhidden .menutoggle :nth-child(1) {
+  opacity: 1;
+}
+
+.offset-top {
+  padding-top: 70px;
+}
+
+.offset-bot {
+  padding-bottom: 6vw;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  color: white;
+}
+
+.wave {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+}
+
+.footer {
+  padding: 50px;
+  height: 250px;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.customa {
+  border: solid 1px #003049;
+  border-radius: 15px;
+  padding: 20px;
+  background-image: linear-gradient(90deg, #003049 50%, transparent 50%);
+  background-size: 205%;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  transition: all .3s ease-in-out;
+}
+
+.customa:hover {
+  background-position: 0% 100%;
+  transform: rotate(3deg) scale(1.1);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/*index*/
+
+body.index {
+  height: 200vh;
+  height: 200dvh;
+
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+}
+
+body.index::-webkit-scrollbar {
+  background: transparent;
+  width: 0;
+}
+
+.intro-front {
+  height: 100vh;
+  height: 100dvh;
+  width: 100vw;
+  width: 100dvw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.intro-front>span {
+  color: white;
+  font-size: min(10vh, 15vw);
+  text-shadow: 3px 3px #003049,
+               6px 6px #d62828,
+               9px 9px #f77f00,
+               12px 12px #fcbf49,
+               15px 15px #eae2b7;
+}
+
+.intro-back {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  overflow: hidden;
+}
+
+.intro-back>img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.arrdown {
+  position: absolute;
+  bottom: 1vh;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.links {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centlinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+}
+
+/*projects*/
+
+.projects {
+  margin-inline: auto;
+  display: grid;
+  gap: 15px;
+}
+
+.projects img {
+  max-height: 50vh;
+  max-height: 50dvh;
+  object-fit: contain;
+}
+
+.proj {
+  color: white;
+  margin-top: 30px;
+  border: solid 1px #003049;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.project {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  max-width: 80vw;
+  max-width: 80dvw;
+}
+
+.project .play {
+  margin: 50px;
+  width: fit-content;
+}
+
+.projimg {
+  align-self: center;
+  margin-top: 30px;
+  max-height: 40vh;
+  max-height: 40dvh;
+  max-width: 80vw;
+  max-width: 80dvw;
+  height: auto;
+  width: auto;
+}
+
+/*about*/
+
+.aboutme {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*contact*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  gap: 25px;
+  align-self: center;
+}
