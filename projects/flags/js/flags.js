@@ -224,7 +224,7 @@ function selectRandCountry() {
   SELECTED = Math.floor(Math.random() * countries.length)
   document.getElementById("flag").classList.add("fi-" + countries[SELECTED][0])
   randomselection = [SELECTED]
-  for (let i = 0; i < 3; i++) {i
+  for (let i = 0; i < 3; i++) {
     randomcountry = Math.floor(Math.random() * countries.length)
     while (randomselection.includes(randomcountry)) {
       randomcountry += 1

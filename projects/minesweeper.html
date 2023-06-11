@@ -5,8 +5,8 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/global.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="/css/global.css" rel="stylesheet">
+    <link href="css/proj.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,11 +16,11 @@
     <div class="navbar navhidden">
       <div class="controls">
         <a href="/index.html" class="logo">
-          <img src="img/logo.png" alt="logo">
+          <img src="/img/logo.png" alt="logo">
         </a>
         <button onclick="toggleNavLinks();" class="menutoggle">
-          <img src="svg/menu_FILL0_wght500_GRAD200_opsz48.svg" alt="menu">
-          <img src="svg/close_FILL0_wght500_GRAD200_opsz48.svg" alt="close">
+          <img src="/svg/menu_FILL0_wght500_GRAD200_opsz48.svg" alt="menu">
+          <img src="/svg/close_FILL0_wght500_GRAD200_opsz48.svg" alt="close">
         </button>
       </div>
       <div class="navlinks">
@@ -30,32 +30,18 @@
       </div>
     </div>
     <div class="content">
-      <div class="intro-front">
-        <span>Jonáš Lazar</span>
-        <button class="arrdown" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})">
-          <img src="svg/keyboard_double_arrow_down_FILL0_wght500_GRAD200_opsz48.svg" alt="down">
-        </button>
+      <div class="project">
+        <img src="/img/minesweeper.png" alt="minesweeper" class="projimg offset-top">
+        <h3>Minesweeper</h3>
+        <a href="https://github.com/JonaslazarVDA/rust-minesweeper" target="_blank" class="customa play"><i class="fa-brands fa-github fa-2xl"></i> GitHub</a>
+        <span class="offset-bot">Kopie hry minsweeper (hledání min) napsaná v programovacím jazyce rust za pomoci <a href="https://bevyengine.org/" target="_blank" class="underline">bevy</a>, hra není dokončena a nachází se v ní různé chyby a nedostatky.</span>
       </div>
-      <div class="intro-back">
-        <img src="svg/intro.svg" alt="intro"/>
-      </div>
-      <div class="links">
-        <div class="centlinks">
-          <a href="about.html" class="customa">
-            O MNĚ
-          </a>
-          <a href="projects.html" class="customa">
-            PROJEKTY
-          </a>
-        </div>
-      </div>
-      <img src="svg/wave-haikei.svg" alt="wave" class="wave">
+      <img src="/svg/wave-haikei.svg" alt="wave" class="wave">
     </div>
     <div class="footer">
       <a href="https://github.com/JonaslazarVDA" target="_blank">JonaslazarVDA <i class="fa-brands fa-github fa-2xl"></i></a>
     </div>
 
-  <script src="js/navbar.js"></script>
-  <script src="js/index.js"></script>
+  <script src="/js/navbar.js"></script>
   </body>
 </html>
