@@ -186,8 +186,7 @@ body.index::-webkit-scrollbar {
 .intro-front {
   height: 100vh;
   height: 100dvh;
-  width: 100vw;
-  width: 100dvw;
+  width: 100%;
 
   display: flex;
   justify-content: center;
