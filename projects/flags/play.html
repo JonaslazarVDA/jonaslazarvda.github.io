@@ -8,15 +8,30 @@
     <link rel="stylesheet" href="css/flags.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
     <script defer src="js/flags.js"></script>
+    <script src="https://kit.fontawesome.com/b3689e93de.js" crossorigin="anonymous"></script>
   </head>
   <body>
-  <span class="streak">Streak: <span id="streak">0</span></span>
-  <span class="fi" id="flag"></span>
-  <div class="answer">
-    <button type="button" onclick="clickButton(this);" id="btn0">Click to start!</button>
-    <button type="button" onclick="clickButton(this);" id="btn1">Click to start!</button>
-    <button type="button" onclick="clickButton(this);" id="btn2">Click to start!</button>
-    <button type="button" onclick="clickButton(this);" id="btn3">Click to start!</button>
-  </div>
+    <button class="lang-button" onclick="openLangChanger();">
+      <i class="fa-solid fa-language"></i><i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <span class="streak">Streak: <span id="streak">0</span></span>
+    <span class="fi" id="flag"></span>
+    <div class="answer">
+      <button type="button" onclick="clickButton(this);" id="btn0">Click to start!</button>
+      <button type="button" onclick="clickButton(this);" id="btn1">Click to start!</button>
+      <button type="button" onclick="clickButton(this);" id="btn2">Click to start!</button>
+      <button type="button" onclick="clickButton(this);" id="btn3">Click to start!</button>
+    </div>
+    <div id="lang-picker">
+      <div class="lang-picker">
+        <i class="fa-solid fa-xmark" onclick="closeLangChanger()"></i>
+        <div>
+          <span>
+          Language:
+          </span>
+          <select name="lang" id="lang-select" onchange="changeLang(this);"></select>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -46,3 +46,51 @@ button.wrong {
     min-width: 280px;
   }
 }
+
+#lang-picker {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background: #0005;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-picker {
+  position: relative;
+  color: white;
+  background: #001724;
+  border-radius: 30px;
+  border: solid 1px #003049;
+}
+
+.lang-picker>div {
+  margin: 4rem;
+}
+
+.lang-picker>div>span {
+  margin-right: 50px;
+}
+
+.lang-picker>i {
+  cursor: pointer;
+  background: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+}
+
+.lang-button {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #001724;
+  border-radius: 10px;
+  border: solid 1px #003049;
+  padding: 15px;
+}
