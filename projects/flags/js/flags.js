@@ -408,7 +408,7 @@ function changeLang(el) {
   );
   for (let i = 0; i < 4; i++) {
     btn = document.getElementById("btn"+i)
-    btn.innerText = regionNames.of(countries[btn.value])
+    btn.innerText = regionNames.of(countries[btn.value].toUpperCase())
   }
 }
 
@@ -452,7 +452,7 @@ function selectRandCountry() {
   for (let i = 0; i < 4; i++) {
     btn = document.getElementById("btn"+i)
     btn.value = randomselection[i]
-    btn.innerText = regionNames.of(countries[randomselection[i]])
+    btn.innerText = regionNames.of(countries[randomselection[i]].toUpperCase())
     if (btn.classList.contains("wrong")) {
       btn.classList.remove("wrong")
     }
