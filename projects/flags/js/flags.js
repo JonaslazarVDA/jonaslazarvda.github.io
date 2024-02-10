@@ -406,6 +406,7 @@ function changeLang(el) {
   regionNames = new Intl.DisplayNames(
     [el.value], {type: 'region'}
   );
+  if (isNaN(SELECTED)) return
   for (let i = 0; i < 4; i++) {
     btn = document.getElementById("btn"+i)
     btn.innerText = regionNames.of(countries[btn.value].toUpperCase())
